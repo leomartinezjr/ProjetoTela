@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjetoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-We-pSM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSJ-zH-Tbl" userLabel="PrimeiroButton">
+                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Log com o Facebook" backgroundImage="FB">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-70-mNe" userLabel="SegundoButton">
+                                <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Log com o Google" backgroundImage="Google">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-Sh-VPZ" userLabel="TeceiroButton">
+                                <rect key="frame" x="64.5" y="571.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Log com seu E-mail" backgroundImage="Email">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login ou Crie uma conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-85-v6S">
+                                <rect key="frame" x="114.5" y="372.5" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logo  Lula" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNt-jF-xv0">
+                                <rect key="frame" x="150" y="222" width="114.5" height="120.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uWC-85-v6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0xg-zf-4IR"/>
+                            <constraint firstItem="MNt-jF-xv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8tc-XJ-VhQ"/>
+                            <constraint firstAttribute="bottom" secondItem="T0Y-We-pSM" secondAttribute="bottom" id="Ang-yY-mdC"/>
+                            <constraint firstItem="TSJ-zH-Tbl" firstAttribute="top" secondItem="uWC-85-v6S" secondAttribute="bottom" constant="20" id="BoZ-Pg-uv6"/>
+                            <constraint firstItem="TSJ-zH-Tbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M1c-nS-lQT"/>
+                            <constraint firstItem="BK0-Sh-VPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Swu-f4-8do"/>
+                            <constraint firstItem="TSJ-zH-Tbl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WB7-5I-rmT"/>
+                            <constraint firstItem="T0Y-We-pSM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a0j-Nb-R2n"/>
+                            <constraint firstAttribute="trailing" secondItem="T0Y-We-pSM" secondAttribute="trailing" id="fR3-cd-Rgn"/>
+                            <constraint firstItem="eLz-70-mNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lev-MI-E3z"/>
+                            <constraint firstItem="uWC-85-v6S" firstAttribute="top" secondItem="MNt-jF-xv0" secondAttribute="bottom" constant="30" id="lkf-F1-aN5"/>
+                            <constraint firstItem="BK0-Sh-VPZ" firstAttribute="top" secondItem="eLz-70-mNe" secondAttribute="bottom" constant="10" id="nfq-BP-Vfi"/>
+                            <constraint firstItem="eLz-70-mNe" firstAttribute="top" secondItem="TSJ-zH-Tbl" secondAttribute="bottom" constant="10" id="pYZ-Ph-0SH"/>
+                            <constraint firstItem="T0Y-We-pSM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tTr-k6-NIH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
